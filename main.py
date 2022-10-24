@@ -3,8 +3,8 @@
 numbers = [5, 20, 30, 30, 50]
 delval = int(input('Enter the deletion value: '))
 
-# ******************************
-# Make your Code
-# ******************************
-
+try: 
+    numbers.remove(delval)
+except ValueError:
+    del numbers
 print (numbers)
